@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Candara", Verdana, sans-serif;
+}
+
+.container {
+	width: 900px;
+	margin: 30px auto;
+}
+
+main {
+	background-color: #F7F7F7;
+	padding: 0 20px 10px 20px;
+	overflow: auto;
+}
+
+main li, p {
+	font-size: 14px;
+}
+
+li {
+	list-style-type: square;
+}
+
+a {
+	text-decoration: none;
+	color:#000000;
+}
+
+#crystal {
+	position: fixed;
+    bottom: 0;
+    left: 0;
+	z-index: -1;
+}
+
+#bio {
+	float: left;
+	height: 300px;
+	width: 300px;
+	margin: 20px 20px 0 0;
+}
+
+.backToTop{
+	text-align:center; 
+	text-decoration: none;
+	position:fixed;
+	bottom: 20px;
+	right: 40px;
+	display:none;
+}
+.backToTop:hover{
+	text-decoration:none;
+}
+
+/*--BEGIN HEADER--*/
+
+h1 {
+	font-family: "Andale Mono", "Courier New", Courier, monospace;
+	color: #F16544;
+	line-height: 5px;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+h4 {
+	font-style: italic;
+	color: #666666;
+	font-weight:100;
+	line-height: 2px;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+header h4 a:visited {
+	color: #666666;
+}
+
+.logo, nav {
+	display: inline-block;
+}
+
+nav {
+	float: right;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 20px;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+nav li a {
+	color: #000000;
+}
+
+nav a:hover {
+	background-color: #F16544;
+	color: #FFFFFF;
+}
+
+/*--END HEADER--*/
+
+/*--BEGIN JUMBOTRON--*/
+
+.jumbotron {
+	background-image: url('../img/portfolio/elton.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 400px;
+	width: 900px;
+	text-align:center;
+}
+
+.jumbotron h1 {
+	position: relative;
+	top: 200px;
+	line-height: 36px;
+}
+
+/*--END JUMBOTRON--*/
+
+/*--BEGIN PORTFOLIO*/
+
+.portfolio {
+    margin: 20px 0 0 0;
+}
+
+.col3 {
+	width: 33.33%;
+	padding: 0 10px 0;
+	float: left;
+}
+
+.col3 img {
+	max-width: 100%;
+}
+
+.title {
+	opacity: 0;
+	background-color: #F16544;
+	left: 0;
+	position: absolute;
+	top: 0;
+  	color: #FFFFFF;
+	padding: 0 10px 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.port {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.port:hover .title {
+	opacity: 0.9;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.title a {
+	color: #FFFFFF;
+}
+  
+/*--END PORTFOLIO--*/
+
+  
+/*--BEGIN RESUME--*/
+
+.col {
+	float: left;	
+	width: 50%;
+	padding-right: 50px;
+}
+
+#alm {
+	height: 32px;
+	width: 147px;
+}
+
+#depaul {
+	height: 33px;
+	width: 250px;
+}
+
+.institution {
+	font-weight: bold;
+}
+
+.city {
+	font-style: italic;
+	line-height: 1px;
+}
+
+/*--END RESUME--*/
+
+/*--BEGIN FORM--*/
+
+input, textarea {
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #F16544;
+	width: 450px;
+}
+
+button {
+	padding: 10px;
+	background-color: #F16544;
+	color: #FFFFFF;
+	border: none;
+	width: 150px;
+}
+
+/*--END FORM--*/
+
+/*--BEGIN SOCIAL--*/
+
+.social {
+	float: left;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #F16544;
+	width: 100px;
+}
+	
+.social img {
+	height: 32px;
+	width: 32px;
+}
+
+.social li {
+	list-style-type: none;
+	margin: 5px auto;
+}
+
+/*--END SOCIAL--*/
+
+/*--BEGIN FOOTER--*/
+
+footer ul {
+	float: right;
+}
+
+footer li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 20px;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 12px;
+}
+
+footer li a {
+	color: #666666;
+}
+
+/*--END FOOTER--*/
+
+/*--MEDIA--*/
+@media all and (max-width: 768px) {
+	#crystal, .jumbotron, .social {
+		display: none;
+	}
+	.col3 {
+		float: none;
+	}
+	.logo, nav {
+	display: block;
+	float: none;
+	}
+	nav li, footer li {
+	display: block;
+	text-align: left;
+	margin-left: 0;
+	}
+	footer ul {
+		float: none;
+	}
+	.logo {
+		margin-left: 40px;
+	}
+	#bio {
+		float: none;
+	}
+	input, textarea {
+	width: 325px;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.col3 {
+		width: 100%;
+	}
+	.col {
+		width: 100%;
+		padding-right: 0;
+		float: none;
+	}
+}
