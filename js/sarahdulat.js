@@ -22,8 +22,13 @@ $('document').ready(function() {
 		return false;
 	});
 
-		$('#submit').click(function(){
+	$('#submit').click(function(){
 		alert("Thanks for joining our cause!");
 	});
+
+	$('.title').click(function(){
+  var images = $('.port img').attr('src');
+  alert(images);      
+});
 
 });
