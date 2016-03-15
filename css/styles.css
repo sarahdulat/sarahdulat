@@ -110,6 +110,27 @@ nav a:hover {
 	color: #FFFFFF;
 }
 
+.mobile {
+	display: none;
+}
+
+.mobile li {
+		margin-left: 5px;
+
+}
+
+.dropdown {
+	position: absolute;
+	z-index: 1;
+	background-color: #F16544;
+	padding: 0 5px 5px 5px;
+}
+
+.dropdown li {
+		color: #FFFFFF;
+		text-align: left;
+}
+
 /*--END HEADER--*/
 
 /*--BEGIN JUMBOTRON--*/
@@ -296,7 +317,7 @@ footer li a {
 
 /*--MEDIA--*/
 @media all and (max-width: 768px) {
-	#crystal, .jumbotron, .social {
+	#crystal, .jumbotron, .social, .desktop {
 		display: none;
 	}
 	.col3 {
@@ -306,7 +327,7 @@ footer li a {
 	display: block;
 	float: none;
 	}
-	nav li, footer li {
+	nav li, footer li, li {
 	display: block;
 	text-align: left;
 	margin-left: 0;
@@ -333,5 +354,8 @@ footer li a {
 		width: 100%;
 		padding-right: 0;
 		float: none;
+	}
+	.mobile {
+		display: block;
 	}
 }
