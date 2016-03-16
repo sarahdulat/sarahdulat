@@ -19,11 +19,22 @@
             </div><!--LOGO-->
                   
           <nav>
-            <ul>
+            <ul class="desktop">
               <li><a href="portfolio.html">Portfolio</a></li>
               <li><a href="resume.html">Resume</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="mobile">
+              <li class="burger"><a href="#" id="burger-show">&#9776;</a></li>
+                <div class="dropdown hidden">
+                  <ul>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
             </ul>
           </nav>
         </header>
@@ -64,5 +75,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
     <script type="text/javascript" src="js/sarahdulat.js"></script>
+    <script type="text/javascript" src="js/dropdown.js"></script>
   	</body>
   </html>
