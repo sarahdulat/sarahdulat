@@ -59,6 +59,10 @@ a {
 	text-decoration:none;
 }
 
+.hidden {
+	display: none;
+}
+
 /*--BEGIN HEADER--*/
 
 h1 {
@@ -114,21 +118,29 @@ nav a:hover {
 	display: none;
 }
 
-.mobile li {
-		margin-left: 5px;
-
+.mobile li a {
+		color: #FFFFFF;
 }
 
-.dropdown {
+.dropdown ul {
 	position: absolute;
 	z-index: 1;
 	background-color: #F16544;
-	padding: 0 5px 5px 5px;
+	padding: 5px;
 }
 
-.dropdown li {
+.dropdown li a {
 		color: #FFFFFF;
 		text-align: left;
+}
+
+.burger {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #F16544;
+	display: inline;
+	padding: 0 5px;
 }
 
 /*--END HEADER--*/
@@ -196,10 +208,6 @@ nav a:hover {
 
 .title a {
 	color: #FFFFFF;
-}
-
-.hidden {
-	display: none;
 }
   
 /*--END PORTFOLIO--*/
@@ -317,7 +325,7 @@ footer li a {
 
 /*--MEDIA--*/
 @media all and (max-width: 768px) {
-	#crystal, .jumbotron, .social, .desktop {
+	#crystal, .jumbotron, .desktop {
 		display: none;
 	}
 	.col3 {
@@ -357,5 +365,11 @@ footer li a {
 	}
 	.mobile {
 		display: block;
+	}
+}
+
+@media all and (max-width: 1100px) {
+	.social {
+		display: none;
 	}
 }
