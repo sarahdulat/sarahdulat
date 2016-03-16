@@ -18,11 +18,4 @@ $(document).ready(function(){
     $('#backdrop').click(function(){
 					close_box();
 				});
-
-    $( window ).resize(function() {
-        if ($(window).width() < 769) {
-            $('col3').removeClass('.trigger');
-        }
-    });
-
 }); 
