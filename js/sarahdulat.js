@@ -23,12 +23,7 @@ $('document').ready(function() {
 	});
 
 	$('#submit').click(function(){
-		alert("Thanks for joining our cause!");
+		alert("Thanks for getting in touch!");
 	});
-
-	$('.title').click(function(){
-  var images = $('.port img').attr('src');
-  alert(images);      
-});
 
 });
