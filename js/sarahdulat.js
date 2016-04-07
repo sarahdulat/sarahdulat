@@ -1,13 +1,13 @@
 $('document').ready(function() {
 
-	$('#hide').click(function() {
-	  $('.jumbotron').slideUp(800);
-	});
-	$('#show').click(function() {
-		$('.jumbotron').slideDown(800);
-	});
+	// $('#hide').click(function() {
+	//   $('.jumbotron').slideUp(800);
+	// });
+	// $('#show').click(function() {
+	// 	$('.jumbotron').slideDown(800);
+	// });
 
-		//Check to see if the window is top if not then display button
+	//Check to see if the window is top if not then display button
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 100) {
 			$('.backToTop').fadeIn();
@@ -25,5 +25,16 @@ $('document').ready(function() {
 	$('#submit').click(function(){
 		alert("Thanks for getting in touch!");
 	});
+
+	$('.portImage').click(function() {
+		$(this).find('.title').css('opacity', 0.9);
+		return false;
+    });
+
+ 	// $('.portImage').click(function() {
+ 	// 	$('.portImage').toggle();
+ 	// 	$(this).find('.title').css('opacity', 0.9);
+ 	// 	return false;
+ 	// });
 
 });
