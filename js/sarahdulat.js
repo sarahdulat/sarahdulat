@@ -1,3 +1,10 @@
+function close_box()
+	{
+		$('#backdrop, .lightbox').fadeOut(300), function() {
+			$('#backdrop, .lightbox').css('display', 'none');
+		};
+	}
+
 $('document').ready(function() {
 
 	$('#burger-show').click(function() {
@@ -19,8 +26,22 @@ $('document').ready(function() {
 		return false;
 	});
 
-	// $('.portImage').click(function() {
-	// 	$(this).find('.title').css('opacity', 0.9);
- //    });
+	// lightbox
+
+	$('.title').on('click', function(e) {
+
+		var target = $(e.target);
+		var parent = target.parentElement;
+		var src = parent.attr('src');
+
+		$('.lightbox img').attr('src', src);
+        $('.lightbox').fadeIn(300);      // to make the box visible
+        $('#backdrop').fadeIn(800);       // to make the backdrop visible
+    });
+
+
+    $('#backdrop').click(function(){
+					close_box();
+				});
 
 });
