@@ -16,7 +16,7 @@ body {
 
 main {
 	background-color: #F7F7F7;
-	padding: 0 10px 10px;
+	padding: 0 20px 20px;
 	overflow: auto;
 	clear: both;
 }
@@ -41,7 +41,7 @@ a {
 	float: left;
 	height: 300px;
 	width: 300px;
-	margin: 20px 20px 0 0;
+	margin: 20px 20px 0 0px;
 }
 
 .backToTop{
@@ -135,7 +135,7 @@ nav a:hover {
 
 .portfolio {
     margin: 0;
-    padding: 20px 10px 0;
+    padding: 20px 0px 0;
     width: 100%;
     -moz-column-gap: 20px;
     -webkit-column-gap: 20px;
@@ -172,7 +172,7 @@ nav a:hover {
 }
 
 .portImage:hover .title {
-	opacity: 0.9;
+	opacity: 0.85;
 }
 
 .italic {
@@ -217,7 +217,7 @@ nav a:hover {
 .col {
 	float: left;	
 	width: 50%;
-	padding: 0 50px 0 10px;
+	padding: 0 50px 0 0px;
 }
 
 #alm {
@@ -316,12 +316,6 @@ footer a:hover {
 		max-width: 100%;
 }
 
-	.col {
-		width: 100%;
-		padding-right: 0;
-		float: none;
-}
-
 	footer ul {
 	padding: 0;
 }
@@ -361,6 +355,12 @@ footer a:hover {
 
 	.logo, nav {
 	display: block;
+}
+
+	.col {
+		width: 100%;
+		padding-right: 0;
+		float: none;
 }
 
     }
