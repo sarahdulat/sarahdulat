@@ -256,6 +256,10 @@ main .col li:before {
     color: #F16544;
 }
 
+ul.indent li {
+	margin-left: 15px;
+}
+
 /*--END RESUME--*/
 
 /*--BEGIN FOOTER--*/
